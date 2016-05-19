@@ -17,7 +17,6 @@ page '/*.txt', layout: false
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
 # General configuration
-activate :asset_hash
 
 # Reload the browser automatically whenever files change
 configure :development do
@@ -39,7 +38,8 @@ end
 configure :build do
   # Minify CSS on build
   activate :minify_css
-
-  # Minify Javascript on build
   activate :minify_javascript
+  activate :imageoptim
+  activate :asset_hash
+  activate :minify_html
 end
