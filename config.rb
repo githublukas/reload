@@ -39,7 +39,6 @@ configure :build do
   # Minify CSS on build
   activate :minify_css
   activate :minify_javascript
-  activate :imageoptim
   activate :asset_hash
   activate :minify_html
 end
